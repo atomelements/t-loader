@@ -1,6 +1,6 @@
 {
   "name": "t-loader",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "authors": [
     "Rahul Pilkhwal <rahul.pilkhwal@tavisca.com>",
     "Shailesh Kumar Srivastava <ssrivastava@tavisca.com>",
@@ -24,8 +24,8 @@
     "test",
     "tests"
   ],
-  "dependencies": { 
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.3", 
+  "dependencies": {
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.3",
     "polymer": "Polymer/polymer#^1.0.0"
   },
   "devDependencies": {
