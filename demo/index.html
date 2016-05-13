@@ -11,8 +11,15 @@
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
-  <link rel="import" href="../t-loader.html">
+  <link rel="import" href="../t-fullpage-loader.html">
   <link rel="import" href="../../t-shared-components/theme.html">
+  <style>
+    html,body{
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 <!-- if you remove the active attribute below
@@ -21,6 +28,10 @@
 	 called for `animationend` event.
 	 TODO: Why does it work this way?
 -->
-	<t-loader active></t-loader>
+	<t-fullpage-loader active>
+    <div>that the `reset` listener gets
+   called for `animationend` event.
+   TODO: Why does it work this way</div>
+  </t-fullpage-loader>
 </body>
 </html>

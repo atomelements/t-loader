@@ -10,33 +10,31 @@
         }
         :host[active]{
         	display: block;
-        }
-        .modal.fit {
-            position: fixed;
-            background: rgba(255, 255, 255, 0.4);
             z-index: 99;
-            color: #000;
-            font-weight: 600;
+        }
+        .modal{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
         }
         .middle {
-            min-width: 150px;
-            min-height: 150px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 4px;
+            max-width: 100%;
             padding: 10px;
-            margin: 0 20%;
+            color: #fff;
+            text-align: center;
+            font-size: var(--font-18,18px);
+            font-weight: normal;
         }
         
         #loader {
             margin-bottom: 10px;
         }
         
-        .middle::content * {
-            color: #fff;
-            text-align: center;
-        }
         </style>
-        <div class="fit modal layout horizontal center center-justified">
+        <div class="modal layout horizontal center center-justified">
             <div class="middle layout vertical center center-justified">
                 <t-loader id="loader" active></t-loader>
                 <content select="*"></content>
