@@ -5,10 +5,10 @@
     <template>
         <style include="iron-positioning"></style>
         <style include="iron-flex">
-        :host{
+        ::host{
         	display: none;
         }
-        :host[active]{
+        ::host[active]{
         	display: block;
             z-index: 99;
         }
@@ -38,7 +38,7 @@
         <div class="modal layout horizontal center center-justified">
             <div class="middle layout vertical center center-justified">
                 <t-loader id="loader" active></t-loader>
-                <slot name="*"></slot>
+                <slot name="text"></slot>
             </div>
         </div>
     </template>
